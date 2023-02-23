@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;900&display=swap");
+
+:root {
+  --bg-card: #242628;
+  --border-rad: 10px;
+  --primary-color: #f2726a;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background: linear-gradient(to right, #097179, #00dbff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+}
+.card {
+  width: 300px;
+  height: 400px;
+  background: var(--bg-card);
+  border-radius: var(--border-rad);
+  text-align: center;
+  overflow: hidden;
+}
+.card__img {
+  width: 120px;
+  height: 120px;
+  border: 4px solid var(--primary-color);
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 25px auto;
+  transition: all linear 0.5s;
+}
+.card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card__img:hover {
+  width: 100%;
+  height: 100%;
+  border-radius: unset;
+  margin: 0 auto;
+  border: none;
+}
+
+.card__info-title {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.card__info-desc {
+  color: var(--primary-color);
+  font-size: 1rem;
+}
+.card__social {
+  margin: 25px 0;
+}
+.card__social a {
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin: 0 10px;
+  transition: all ease 0.5s;
+}
+.card__social a:hover {
+  color: var(--primary-color);
+}
+.card__btn-contact {
+  width: 150px;
+  height: 40px;
+  border: 1px solid var(--primary-color);
+  color: #fff;
+  background: transparent;
+  font-weight: 600;
+  border-radius: var(--border-rad);
+  transition: all ease 0.5s;
+}
+.card__btn-contact:hover {
+  background: var(--primary-color);
+  cursor: pointer;
+}
