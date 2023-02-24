@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;900&display=swap");
+:root {
+  --primary-color: #e26d71;
+  --white-color: #fff;
+  --black-color: #000;
+  --fs-1: 1.6rem;
+  --fs-2: 1.2rem;
+  --fw-1: 300;
+  --fw-2: 600;
+  --fw-3: 900;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(
+    45deg,
+    rgb(65, 88, 208),
+    rgb(200, 80, 192),
+    rgb(255, 204, 112)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+button {
+  font-family: "Poppins", sans-serif;
+  font-size: var(--fs-2);
+  font-weight: var(--fw-2);
+}
+.btn-modal {
+  padding: 20px 40px;
+  outline: none;
+  border: transparent;
+  border-radius: 8px;
+  transition: all 0.5s;
+}
+.btn-modal:hover {
+  background: var(--primary-color);
+  color: var(--white-color);
+  cursor: pointer;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+}
+.modal__inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--white-color);
+  min-width: 400px;
+  min-height: 200px;
+  border-radius: 5px;
+  overflow: hidden;
+  animation: slideDown 0.3s linear;
+}
+.modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: var(--primary-color);
+}
+.modal__header-text {
+  color: var(--white-color);
+  font-size: var(--fs-2);
+}
+.modal__header-icon {
+  color: var(--white-color);
+  font-size: var(--fs-2);
+}
+.modal__header-icon:hover {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+}
+.modal__body,
+.modal__footer {
+  padding: 15px;
+}
+.modal__body-heading {
+  color: var(--primary-color);
+  font-size: var(--fs-1);
+  font-weight: var(--fw-2);
+}
+.modal__body-desc {
+  color: var(--black-color);
+  font-size: var(--fs-2);
+  font-weight: var(--fw-1);
+}
+.modal__footer {
+  text-align: right;
+}
+.modal__btn--close {
+  background: var(--primary-color);
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  color: var(--white-color);
+  font-size: 1rem;
+  font-weight: var(--fw-1);
+  border-radius: 5px;
+}
+.modal__btn--close:hover {
+  cursor: pointer;
+  background: rgba(226, 109, 113, 0.8);
+}
+.modal--hide {
+  display: none;
+}
+@keyframes slideDown {
+  from {
+    top: 0;
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Css style -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Modal</title>
+  </head>
+  <body>
+    <button class="btn-modal">Modal here</button>
+    <div class="modal modal--hide">
+      <div class="modal__inner">
+        <div class="modal__header">
+          <p class="modal__header-text">Welcome to Nodemy</p>
+          <span class="modal__header-icon">
+            <i class="fa-solid fa-xmark"></i>
+          </span>
+        </div>
+        <div class="modal__body">
+          <h1 class="modal__body-heading">Modal</h1>
+          <p class="modal__body-desc">Đây là nội dung body của modal</p>
+        </div>
+        <div class="modal__footer">
+          <button class="modal__btn--close">Close</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- (Optional) Use CSS or JS implementation -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+    integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="./js/main.js"></script>
+</html>
