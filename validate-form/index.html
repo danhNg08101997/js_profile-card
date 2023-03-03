@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Register Form</title>
+  </head>
+  <body>
+    <form id="form" class="form">
+      <h1 class="form__title">Register</h1>
+      <div class="form__group">
+        <input
+          id="username"
+          type="text"
+          class="form__control"
+          placeholder="Username"
+        />
+        <small></small>
+        <span></span>
+      </div>
+      <div class="form__group">
+        <input
+          id="email"
+          type="email"
+          class="form__control"
+          placeholder="Email"
+        />
+        <small></small>
+        <span></span>
+      </div>
+      <div class="form__group">
+        <input
+          id="password"
+          type="password"
+          class="form__control"
+          placeholder="Password"
+        />
+        <small></small>
+        <span></span>
+      </div>
+      <div class="form__group">
+        <input
+          id="passwordConfirm"
+          type="password"
+          class="form__control"
+          placeholder="Password Confirm"
+        />
+        <small></small>
+        <span></span>
+      </div>
+
+      <button type="submit" class="form__btn">Sign up</button>
+
+      <div class="form__sign-in">
+        <p>
+          If you are a member
+          <a href="#" class="form__sign-in--link">Sign in</a>
+        </p>
+      </div>
+    </form>
+  </body>
+  <script src="./js/validation.js"></script>
+</html>
