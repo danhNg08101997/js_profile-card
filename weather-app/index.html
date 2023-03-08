@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather__app">
+        <div class="weather__search">
+          <input type="text" class="search"/>
+        </div>
+        <div class="weather__content hide">
+          <div class="weather__location">
+            <h1 class="location">
+              <span class="location__city"></span>
+              <span>,</span>
+              <span class="location__country"></span>
+            </h1>
+          </div>
+          <div class="weather__time"></div>
+          <div class="weather__temperature">
+            <span></span>
+          </div>
+          <div class="weather__desc"></div>
+          <div class="weather__desc-more">
+            <div class="visibility">
+              <i class="fa-solid fa-eye"></i>
+              <span></span>
+            </div>
+            <div class="wind">
+              <i class="fa-solid fa-wind"></i>
+              <span></span>
+            </div>
+            <div class="humidity">
+              <i class="fa-solid fa-cloud-sun"></i>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- (Optional) Use CSS or JS implementation -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+    integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="./js/app.js"></script>
+</html>

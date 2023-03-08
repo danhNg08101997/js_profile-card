@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 62.5%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)),
+    url(/img/cold-weather.webp) no-repeat center/cover;
+}
+
+.weather__app {
+  width: 400px;
+  min-height: 600px;
+  border-radius: 15px;
+  background: url(/img/cold-weather.webp) no-repeat center/cover;
+  text-align: center;
+  color: #fff;
+}
+.hot {
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)),
+    url(/img/hot-weather.jpeg) no-repeat center/cover;
+}
+.hot .weather__app {
+  background: url(/img/hot-weather.jpeg) no-repeat center/cover;
+}
+.cool {
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)),
+    url(/img/cool-weather.jpeg) no-repeat center/cover;
+}
+.cool .weather__app {
+  background: url(/img/cool-weather.jpeg) no-repeat center/cover;
+}
+.cold {
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)),
+    url(/img/cold-weather.webp) no-repeat center/cover;
+}
+.cold .weather__app {
+  background: url(/img/cold-weather.webp) no-repeat center/cover;
+}
+.warm {
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)),
+    url(/img/warm-weather.webp) no-repeat center/cover;
+}
+.warm .weather__app {
+  background: url(/img/warm-weather.webp) no-repeat center/cover;
+}
+.weather__search {
+  width: 100%;
+  padding: 20px;
+}
+.weather__search input {
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  padding: 9px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 15px 0 15px 0;
+  background: rgba(255, 255, 255, 0.4);
+  transition: all linear 0.3s;
+}
+
+.weather__search input:focus {
+  border-radius: 0 15px 0 15px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.weather__location {
+  margin-top: 20px;
+}
+
+.location {
+  font-size: 3.5rem;
+  text-shadow: 3px 2px rgba(0, 0, 0, 0.8);
+}
+
+.weather__time {
+  font-size: 0.8rem;
+}
+
+.weather__temperature {
+  margin: 40px 0;
+  font-size: 4.5rem;
+  font-weight: 600;
+}
+
+.weather__temperature span {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  box-shadow: 3px 4px rgba(0, 0, 0, 0.6);
+  text-shadow: 3px 2px rgba(0, 0, 0, 0.8);
+}
+
+.weather__desc {
+  font-size: 3rem;
+  font-weight: 600;
+  text-shadow: 3px 2px rgba(0, 0, 0, 0.8);
+}
+
+.weather__desc-more {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 0;
+  font-size: 0.7rem;
+}
+
+.weather__desc-more div {
+  display: flex;
+  flex-direction: column;
+}
+
+.weather__desc-more span {
+  margin-top: 10px;
+}
+
+.hide {
+  visibility: hidden;
+}
